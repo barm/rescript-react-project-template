@@ -4,7 +4,11 @@
   "scripts": {
     "res:build": "rescript",
     "res:clean": "rescript clean",
-    "res:dev": "rescript build -w"
+    "res:dev": "rescript build -w",
+    "vite:build": "vite build",
+    "vite:preview": "vite --config vite.config.mts",
+    "test": "vitest",
+    "format": "rescript format -all"
   },
   "keywords": [
     "rescript"
@@ -16,7 +20,11 @@
     "react": "^18.2.0"
   },
   "devDependencies": {
-    "rescript": "^10.1.0"
+    "@jihchi/vite-plugin-rescript": "^5.0.0",
+    "@vitejs/plugin-react": "^3.0.0",
+    "rescript": "^10.1.0",
+    "vite": "^4.0.3",
+    "vitest": "^0.26.2"
   },
   "volta": {
     "node": "18.12.1",
