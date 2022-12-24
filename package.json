@@ -8,7 +8,9 @@
     "vite:build": "vite build",
     "vite:preview": "vite --config vite.config.mts",
     "test": "vitest",
-    "format": "rescript format -all"
+    "res:format": "rescript format -all",
+    "prettier:format": "prettier --write .",
+    "format": "npm run res:format && npm run prettier:format"
   },
   "keywords": [
     "rescript"
@@ -22,6 +24,7 @@
   "devDependencies": {
     "@jihchi/vite-plugin-rescript": "^5.0.0",
     "@vitejs/plugin-react": "^3.0.0",
+    "prettier": "^2.8.1",
     "rescript": "^10.1.0",
     "vite": "^4.0.3",
     "vitest": "^0.26.2"
