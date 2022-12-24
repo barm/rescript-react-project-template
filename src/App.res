@@ -4,7 +4,7 @@
 @react.component
 let make = () => {
   <div className="App">
-    <header className="App-header">
+    <header className="App-header counter">
       <img src={logo} className="App-logo" alt="logo" />
       <p> {"Hello Vite + React + ReScript!"->React.string} </p>
       <Counter />
